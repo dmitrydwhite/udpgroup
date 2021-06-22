@@ -16,11 +16,11 @@ Let's imagine that we have a setup like this:
 We can imagine our setup looks something like this:
 <img src="./udpgroup_diagram.png">
 
-We'll use `UdpGroup` to coordinate the messages to and from the `Telemetry` and `Files` processes on `Remote Device`.
+We'll use `udpgroup` to coordinate the messages to and from the `Telemetry` and `Files` processes on `Remote Device`.
 
 First, we'll require the library:
 ```js
-const UdpGroup = require('UdpGroup');
+const UdpGroup = require('udpgroup');
 ```
 
 Then we'll instantiate a new UdpGroup with the port that we'll be listening on:
