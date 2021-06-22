@@ -1,7 +1,7 @@
-# `UdpGroup`
+# `udpgroup`
 
-### What is `UdpGroup`?
-`UdpGroup` creates a simple API wrapper around the Node JS `dgram` module to organize multiple duplex functions on a single UDP port.
+### What is `udpgroup`?
+`udpgroup` creates a simple API wrapper around the Node JS `dgram` module to organize multiple duplex functions on a single UDP port.
 
 ### Simple Implementation:
 
