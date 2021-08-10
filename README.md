@@ -14,7 +14,10 @@ Let's imagine that we have a setup like this:
 * Internally, `MainNodeJSApp` is using NodeJS Streams to both handle files received and process telemetry data. Both of those data structures are completely different, so `MainNodeJSApp` has two different NodeJS streams to process them.
 
 We can imagine our setup looks something like this:
-<image src="https://drive.google.com/uc?id=18s-cfDLfnuG7VR53S_kKaq_PBUu2bIk3" />
+<image
+  src="https://drive.google.com/uc?id=18s-cfDLfnuG7VR53S_kKaq_PBUu2bIk3"
+  alt="A system diagram with MainNodeJSApp connected over UDP to ports 8001 and 8005 on Remote Device; see github readme for image"
+/>
 
 We'll use `udpgroup` to coordinate the messages to and from the `Telemetry` and `Files` processes on `Remote Device`.
 
