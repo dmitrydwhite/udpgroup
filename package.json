@@ -1,6 +1,6 @@
 {
   "name": "udpgroup",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A utility for managing multiple udp destinations",
   "main": "udpGroup.js",
   "scripts": {
