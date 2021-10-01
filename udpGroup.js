@@ -131,6 +131,7 @@ class UdpGroup extends EventEmitter {
 
   getSendArgsFrom(pathwayId, offset, length, cb) {
     const sendArgs = [];
+    const destinationString = this.pathways[pathwayId] || this.pathways[this.nicknames[pathwayId]];
     let callback;
 
     if (offset || length) {
@@ -141,8 +142,8 @@ class UdpGroup extends EventEmitter {
       }
     }
 
-    if (this.pathways[pathwayId]) {
-      const [address, strPort] = pathwayId.split('_');
+    if (destinationString) {
+      const [address, strPort] = destinationString.split('_');
       const port = Number(strPort);
 
       if (!Number.isFinite(port)) {
